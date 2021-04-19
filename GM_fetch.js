@@ -233,7 +233,7 @@
 
   function headers(responseHeaders) {
     var head = new Headers()
-    var pairs = responseHeaders.trim().split('\n')
+    var pairs = responseHeaders.trim().split('\r\n')
     pairs.forEach(function(header) {
       var split = header.trim().split(':')
       var key = split.shift().trim()
